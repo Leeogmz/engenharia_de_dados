@@ -1,8 +1,8 @@
 from processamento_dados import Dados 
 
 
-path_csv = 'engenharia_de_dados/projeto_pipeline_dados/data_raw/dados_empresaB.csv'
-path_json = 'engenharia_de_dados/projeto_pipeline_dados/data_raw/dados_empresaA.json'
+path_csv = 'projeto_pipeline_dados/data_raw/dados_empresaB.csv'
+path_json = 'projeto_pipeline_dados/data_raw/dados_empresaA.json'
 path_dados_combinados = 'engenharia_de_dados/projeto_pipeline_dados/data_processed/dados_combinados.csv'
 
 #Extract
@@ -37,6 +37,6 @@ print(f'Quantidade de linhas após fusão: {dados_fusao.qtd_linhas}')
 
 #Load
 
-path_dados_combinados = 'engenharia_de_dados/projeto_pipeline_dados/data_processed/dados_combinados.csv'
+path_dados_combinados = 'projeto_pipeline_dados/data_processed/dados_combinados.csv'
 dados_fusao.salvando_dados(path_dados_combinados)
 print(f'O arquivo processado foi salvo em: {path_dados_combinados}')

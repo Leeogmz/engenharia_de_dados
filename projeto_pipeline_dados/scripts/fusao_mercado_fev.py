@@ -62,9 +62,9 @@ def salvando_dados(dados, path):
         writer.writerows(dados)      
 
 
-path_csv = 'data_raw/dados_empresaB.csv'
-path_json = 'data_raw/dados_empresaA.json'
-path_dados_combinados = 'data_processed/dados_combinados.csv'
+path_csv = 'projeto_pipeline_dados/data_raw/dados_empresaB.csv'
+path_json = 'projeto_pipeline_dados/data_raw/dados_empresaA.json'
+path_dados_combinados = 'projeto_pipeline_dados/data_processed/dados_combinados.csv'
 
 # Iniciando a leitura
 dados_json = leitura_dados(path_json, 'json')
